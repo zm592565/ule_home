@@ -1,0 +1,449 @@
+[ 2017-04-10T20:25:04+08:00 ] ::1 /ule/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wuliu D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:25:04+08:00 ] ::1 /ule/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:25:11+08:00 ] ::1 /ule/Admin/FeedBack/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sto_message` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_message` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sto_member` [ RunTime:0.0160s ]
+SQL: SELECT s.id,s.message_info,s.state,s.add_time,m.member_name,s.admire FROM `sto_member` `m`,`sto_message` `s` WHERE ( s.user_id=m.id ) ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T20:25:19+08:00 ] ::1 /ule/Admin/Class/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sto_class` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_class` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T20:25:32+08:00 ] ::1 /ule/Admin/Class/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:25:40+08:00 ] ::1 /ule/Admin/Class/delone.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T20:25:41+08:00 ] ::1 /ule/Admin/Class/delone.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T20:25:42+08:00 ] ::1 /ule/Admin/Class/delone.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T20:25:43+08:00 ] ::1 /ule/Admin/Class/delone.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T20:25:44+08:00 ] ::1 /ule/Admin/Class/delone.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `sto_class` WHERE ( pid=24 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T20:25:55+08:00 ] ::1 /ule/Admin/AdminRole/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sto_auth_rule` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sto_auth_rule` ORDER BY id is null,id  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\575af4c8e8c3da566cb52225d6019cdc500736db.file.index.html.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\575af4c8e8c3da566cb52225d6019cdc500736db.file.index.html.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.165010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:25:57+08:00 ] ::1 /ule/Admin/AdminRole/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_auth_group` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sto_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\72c72603bb907ff7f601d6d17acf603bf40a504f.file.group.html.php 第 80 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\72c72603bb907ff7f601d6d17acf603bf40a504f.file.group.html.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:26:01+08:00 ] ::1 /ule/Admin/AdminUser/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sto_admin` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_admin` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sto_admin` [ RunTime:0.0140s ]
+SQL: SELECT c.*,b.title FROM sto_admin c,sto_auth_group_access a,sto_auth_group b WHERE ( c.id=a.uid AND a.group_id=b.id ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.227013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.227013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:26:05+08:00 ] ::1 /ule/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_system` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `sto_system` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:26:08+08:00 ] ::1 /ule/Admin/From/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_from` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_from` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sto_from` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:26:11+08:00 ] ::1 /ule/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `sto_system` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sto_system` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:50:41+08:00 ] ::1 /ule/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:50:41+08:00 ] ::1 /ule/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T20:50:41+08:00 ] ::1 /ule/Admin/Login/VerifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:50:51+08:00 ] ::1 /ule/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sto_admin` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `sto_admin` WHERE `user` = 'admin' AND `pass` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sto_admin` SET `last_time`='2017-04-10 20:50:51',`last_ip`='::1',`login_count`='74' WHERE `id` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sto_auth_group_access` [ RunTime:0.0230s ]
+SQL: SELECT b.title,a.group_id FROM sto_auth_group_access a,sto_auth_group b WHERE ( a.uid=1 AND a.group_id=b.id ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-10T20:50:51+08:00 ] ::1 /ule/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wuliu D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T20:50:52+08:00 ] ::1 /ule/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-10T20:50:59+08:00 ] ::1 /ule/Admin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `sto_member` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_member` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sto_member` ORDER BY member_reg_day asc LIMIT 0,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

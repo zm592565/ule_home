@@ -1,0 +1,1145 @@
+[ 2017-04-12T21:11:36+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:11:49+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '36' for key 'PRIMARY'
+
+[ 2017-04-12T21:12:09+08:00 ] ::1 /ule/Admin/Common/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:12:09+08:00 ] ::1 /ule/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:12:09+08:00 ] ::1 /ule/Admin/Login/VerifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002501s ]
+
+[ 2017-04-12T21:12:20+08:00 ] ::1 /ule/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_admin` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `sto_admin` WHERE `user` = 'admin' AND `pass` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sto_admin` SET `last_time`='2017-04-12 21:12:20',`last_ip`='::1',`login_count`='75' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sto_auth_group_access` [ RunTime:0.0250s ]
+SQL: SELECT b.title,a.group_id FROM sto_auth_group_access a,sto_auth_group b WHERE ( a.uid=1 AND a.group_id=b.id ) LIMIT 1   [ RunTime:0.0050s ]
+
+[ 2017-04-12T21:12:20+08:00 ] ::1 /ule/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wuliu D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\5003fa0c88815279fa2c6a00bd6ce378ddabc8e1.file.left_menu.html.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-12T21:12:20+08:00 ] ::1 /ule/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-12T21:12:41+08:00 ] ::1 /ule/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_class` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `sto_class`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sto_news` [ RunTime:0.0275s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sto_news` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sto_news` [ RunTime:0.0250s ]
+SQL: SELECT n.*,c.class_name,f.name FROM sto_news n,sto_class c,sto_from f WHERE ( n.uid=c.id AND n.fromid=f.id ) ORDER BY n.sort asc LIMIT 0,20   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-12T21:12:41+08:00 ] ::1 /ule/Admin/News/page_wel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:12:45+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:12:59+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '36' for key 'PRIMARY'
+
+[ 2017-04-12T21:18:20+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:18:22+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:18:45+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: INSERT INTO `sto_page` (`title`,`zhai`,`keyword`,`content`,`uid`,`time`) VALUES ('关于悠乐','关于悠乐','关于悠乐','&lt;p&gt;&lt;a href=&quot;http://www.u-le.net/&quot; target=&quot;_blank&quot; title=&quot;悠乐&quot;&gt;悠乐&lt;/a&gt;的目标再与为那些想要自由行出国，又不想跟团，想找个留学生或者当地&lt;a href=&quot;http://www.u-le.net/&quot; target=&quot;_blank&quot; title=&quot;悠乐&quot;&gt;地接&lt;/a&gt;，为你提供旅游相关设备以及提供翻译，陪吃陪玩等等...&lt;/p&gt;','36','1492003124') [ RunTime:0.0025s ]
+
+[ 2017-04-12T21:18:46+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:19:44+08:00 ] ::1 /ule/Admin/News/pagedetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:19:56+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '40' for key 'PRIMARY'
+
+[ 2017-04-12T21:21:49+08:00 ] ::1 /ule/Admin/News/pagedetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 44 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 54 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 64 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\360ce57fbcc47c03661a170ab47bfdbde9196f17.file.page.html.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-12T21:22:08+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: INSERT INTO `sto_page` (`title`,`zhai`,`keyword`,`content`,`uid`,`time`) VALUES ('版权声明','版权声明','版权声明','&lt;p&gt;1. 当您在&lt;a href=&quot;http://www.u-le.net/&quot; target=&quot;_self&quot; title=&quot;悠乐&quot;&gt;悠乐&lt;/a&gt;（u-le.net）进行个人用户注册、参加网上或论坛等各种活动时，在您的同意及确认下，本网站将通过注册表格等形式要求您提供一些个人资料。您有权在任何时候拒绝提供这些信息，您在本站点上所提供的所有信息都是基于自愿的原则。&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;　　&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;2. 企业会员所提供的资料将会被本网站统计、汇总，本网站会不定期地通过企业会员留下的信息资料同该企业会员保持联系。&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;　　&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;3. 在未经访问者授权同意的情况下，本网站不会将访问者的个人资料、企业资料泄露给第三方。以下情况除外：&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;（1）根据执法单位之要求或为公共之目的向相关单位提供个人资料；&amp;nbsp;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;（2）由于访问者将用户密码告知他人或与他人共享注册帐户，由此导致的任何个人资料泄露；&amp;nbsp;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;（3）由于黑客攻击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等；&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;（4）由于与本网站链接的其他网站所造成之个人资料泄露及由此而导致的任何法律争议和后果；&amp;nbsp;&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;（5）为免除访问者在生命、身体或财产方面之急迫危险。&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;　　&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;4. 本站点所提供的服务会自动收集有关访问者的信息，这些信息包括访问者人数、访问时间、访问页面、来访地址等，本站点使用这些信息来对我们的服务器进行分析和对网站进行管理。&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;　　&lt;br style=&quot;margin: 0px auto; padding: 0px; color: rgb(127, 127, 127); font-family: &amp;quot;microsoft yahei&amp;quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25px; white-space: normal; background-color: rgb(255, 255, 255);&quot;/&gt;5. cookie是一个标准的互联网技术，它可以使我们存储和获得用户登录信息。本站点使用cookie 来确保您不会重复浏览到相同的内容并可以获得最新的信息，并确认您是站酷（u-le.net）的成员之一。我们并不使用cookie来跟踪任何个人信息。&lt;/p&gt;','40','1492003327') [ RunTime:0.0025s ]
+
+[ 2017-04-12T21:22:10+08:00 ] ::1 /ule/Admin/News/pagedetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:23:45+08:00 ] ::1 /ule/Admin/News/pagedetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-12T21:23:59+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '40' for key 'PRIMARY'
+
+[ 2017-04-12T21:29:11+08:00 ] ::1 /ule/Admin/News/pagedetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=40 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-12T21:29:15+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:29:21+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '36' for key 'PRIMARY'
+
+[ 2017-04-12T21:34:55+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:35:00+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sto_page` SET `title`='关于悠乐',`zhai`='关于悠乐111',`keyword`='关于悠乐',`content`='&lt;p&gt;&lt;a href=&quot;http://www.u-le.net/&quot; target=&quot;_blank&quot; title=&quot;悠乐&quot;&gt;悠乐&lt;/a&gt;的目标再与为那些想要自由行出国，又不想跟团，想找个留学生或者当地&lt;a href=&quot;http://www.u-le.net/&quot; target=&quot;_blank&quot; title=&quot;悠乐&quot;&gt;地接&lt;/a&gt;，为你提供旅游相关设备以及提供翻译，陪吃陪玩等等...&lt;/p&gt;',`time`='1492004099' WHERE `id` = 40 [ RunTime:0.0000s ]
+
+[ 2017-04-12T21:35:01+08:00 ] ::1 /ule/Admin/News/pagedetail/id/36.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=36 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-04-12T21:39:23+08:00 ] ::1 /ule/Admin/News/pagedetail/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `sto_page` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `sto_page` WHERE ( uid=38 ) LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-12T21:54:05+08:00 ] ::1 /ule/Admin/Class/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_class` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_class` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-04-12T21:54:10+08:00 ] ::1 /ule/Admin/Class/addclass.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_class`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 38 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 40 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_class` WHERE `pid` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 51 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 68 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 68 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 69 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 69 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 77 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 77 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 84 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 84 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 91 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 99 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b36836b8a9aa9cabad25a6da5c769055e57ed5ec.file.addclass.html.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:54:19+08:00 ] ::1 /ule/Admin/Class/addclass.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW TABLE STATUS LIKE 'ule_class' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `ule_class` WHERE `class_name` = 'test' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `ule_class` (`pid`,`class_type`,`class_name`,`class_en`,`is_menu`,`class_info`,`time`,`sort`) VALUES ('0','0','test','test','1','test','2017-04-12 21:54:17','45') [ RunTime:0.0010s ]
+
+[ 2017-04-12T21:54:21+08:00 ] ::1 /ule/Admin/Class/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_class` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_class` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:54:24+08:00 ] ::1 /ule/Admin/Class/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `ule_class` WHERE ( pid=45 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `ule_class` WHERE ( id=45 ) [ RunTime:0.0010s ]
+
+[ 2017-04-12T21:54:26+08:00 ] ::1 /ule/Admin/Class/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ule_class` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_class` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\da84345d7b3401894e8c195345526e9084e1f23f.file.index.html.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:54:28+08:00 ] ::1 /ule/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_class` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ule_class`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_news` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_news` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_news` [ RunTime:0.0240s ]
+SQL: SELECT n.*,c.class_name,f.name FROM ule_news n,ule_class c,ule_from f WHERE ( n.uid=c.id AND n.fromid=f.id ) ORDER BY n.sort asc LIMIT 0,20   [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-12T21:54:29+08:00 ] ::1 /ule/Admin/News/page_wel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-12T21:54:31+08:00 ] ::1 /ule/Admin/News/pagelist/id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_news` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_news` WHERE `uid` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_news` [ RunTime:0.0240s ]
+SQL: SELECT n.*,c.class_name,f.name FROM ule_news n,ule_class c,ule_from f WHERE ( n.uid=35 AND n.uid=c.id AND n.fromid=f.id ) ORDER BY n.sort desc LIMIT 0,20   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 45 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 45 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 46 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 46 行.
+NOTIC: [8] Undefined index: news D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 79 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 79 行.
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 132 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\73d74ff814aabdaaddbfeda92ef9fac256908f81.file.pagelist.html.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-12T21:54:32+08:00 ] ::1 /ule/Admin/News/pagedetail/id/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ule_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_page` WHERE ( uid=43 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:54:39+08:00 ] ::1 /ule/Admin/News/pagedetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_page` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ule_page` WHERE ( uid=43 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ule_page` SET `title`='联系我们1',`zhai`='联系iwomen',`keyword`='联系我们',`content`='&lt;p&gt;联系我们1&lt;/p&gt;',`time`='1492005278' WHERE `id` = 34 [ RunTime:0.0010s ]
+
+[ 2017-04-12T21:54:40+08:00 ] ::1 /ule/Admin/News/pagedetail/id/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_page` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_page` WHERE ( uid=43 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:54:43+08:00 ] ::1 /ule/Admin/Net/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_net` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_net` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_net` [ RunTime:0.0260s ]
+SQL: SELECT n.*,a.user FROM ule_net n,ule_admin a WHERE ( n.add_user=a.id ) ORDER BY n.sort asc LIMIT 0,20   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:54:59+08:00 ] ::1 /ule/Admin/FeedBack/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_message` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_message` LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ule.sto_member' doesn't exist
+
+[ 2017-04-12T21:55:50+08:00 ] ::1 /ule/Admin/FeedBack/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_message` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_message` LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ule.member' doesn't exist
+
+[ 2017-04-12T21:57:24+08:00 ] ::1 /ule/Admin/FeedBack/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ule_message` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_message` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_member` [ RunTime:0.0240s ]
+SQL: SELECT s.id,s.message_info,s.state,s.add_time,m.member_name,s.admire FROM `ule_member` `m`,`ule_message` `s` WHERE ( s.user_id=m.id ) ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-04-12T21:57:30+08:00 ] ::1 /ule/Admin/Banner/bannerlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ule_bclass` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_bclass`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: count D:\xampp\htdocs\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 40 行.
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\8c7bd804e9fa34956b68dc8bad3b1978135e54a3.file.bannerlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.297017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.298017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:57:33+08:00 ] ::1 /ule/Admin/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_bclass` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `ule_bclass`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:57:33+08:00 ] ::1 /ule/Admin/News/page_wel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-12T21:57:37+08:00 ] ::1 /ule/Admin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_member` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_member` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_member` ORDER BY member_reg_day asc LIMIT 0,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+NOTIC: [8] Undefined index: member_phone D:\xampp\htdocs\ule\Application\Runtime\Cache\d8b3dbd286a3b2545dbf4bef0db4c78e2dbf043c.file.index.html.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-12T21:57:40+08:00 ] ::1 /ule/Admin/AdminRole/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_auth_rule` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `ule_auth_rule` ORDER BY id is null,id  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+NOTIC: [8] Undefined index: pid D:\xampp\htdocs\ule\ThinkPHP\Library\Org\Nx\Data.class.php 第 80 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\575af4c8e8c3da566cb52225d6019cdc500736db.file.index.html.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\575af4c8e8c3da566cb52225d6019cdc500736db.file.index.html.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:57:42+08:00 ] ::1 /ule/Admin/AdminRole/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ule_auth_group` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `ule_auth_group`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: page D:\xampp\htdocs\ule\Application\Runtime\Cache\72c72603bb907ff7f601d6d17acf603bf40a504f.file.group.html.php 第 80 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\72c72603bb907ff7f601d6d17acf603bf40a504f.file.group.html.php 第 80 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:57:44+08:00 ] ::1 /ule/Admin/AdminUser/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_admin` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_admin` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ule_admin` [ RunTime:0.0240s ]
+SQL: SELECT c.*,b.title FROM ule_admin c,ule_auth_group_access a,ule_auth_group b WHERE ( c.id=a.uid AND a.group_id=b.id ) ORDER BY id asc LIMIT 0,20   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-12T21:57:47+08:00 ] ::1 /ule/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_system` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `ule_system` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:57:51+08:00 ] ::1 /ule/Admin/From/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_from` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_from` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ule_from` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-12T21:57:55+08:00 ] ::1 /ule/Admin/From/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Application/Runtime/Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php D:\xampp\htdocs\ule\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Application/Runtime/Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\xampp\htdocs\ule\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 39 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 39 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 46 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 46 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 54 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 54 行.
+NOTIC: [8] Undefined index: rs D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 63 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\ule\Application\Runtime\Cache\b0de8a169397e724270a51dab32c3d6f506beb51.file.add.html.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-12T21:58:01+08:00 ] ::1 /ule/Admin/From/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ule_from` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `ule_from` WHERE `name` = '111' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `ule_from` (`name`,`name_en`,`link`,`name_info`,`date`) VALUES ('111','11','11','11','2017-04-12 21:58:00') [ RunTime:0.0010s ]
+
+[ 2017-04-12T21:58:03+08:00 ] ::1 /ule/Admin/From/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_from` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_from` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_from` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-12T21:58:06+08:00 ] ::1 /ule/Admin/From/delone.html?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ule_from` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `ule_from` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: DELETE FROM `ule_from` WHERE ( id=7 ) [ RunTime:0.0010s ]
+
+[ 2017-04-12T21:58:08+08:00 ] ::1 /ule/Admin/From/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ule_from` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ule_from` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ule_from` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
