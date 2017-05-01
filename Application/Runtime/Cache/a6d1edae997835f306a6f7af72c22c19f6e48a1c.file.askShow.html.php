@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-04-29 22:31:30
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-01 08:38:01
          compiled from "./Application/Home/View/default\Ask\askShow.html" */ ?>
 <?php /*%%SmartyHeaderCode:17954590089cb29a7c4-81239321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a6d1edae997835f306a6f7af72c22c19f6e48a1c' => 
     array (
       0 => './Application/Home/View/default\\Ask\\askShow.html',
-      1 => 1493476287,
+      1 => 1493484624,
       2 => 'file',
     ),
   ),
@@ -32,7 +32,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590089cb5c708')) {function content_590089cb5c708($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'D:\\xampp\\htdocs\\ule\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_590089cb5c708')) {function content_590089cb5c708($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'F:\\wamp\\www\\ule\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
 ?><link rel="stylesheet" type="text/css" href="<?php echo @COMMON_CSS_PATH;?>
 /page.css">
 <script type="text/javascript">
@@ -316,4 +316,8 @@ ueditor/1.4.3/ueditor.config_home.js"></script>
 		<script type="text/javascript" src="<?php echo @UEDITOR_PATH;?>
 ueditor/1.4.3/ueditor.all.min.js"> </script>
 		<script type="text/javascript" src="<?php echo @UEDITOR_PATH;?>
-ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script><?php }} ?>
+ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+
+
+		<?php }} ?>

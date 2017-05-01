@@ -23,7 +23,7 @@ define('PAGENUM', 20);
 //定义数据路链接
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PWD', 'root');
+define('DB_PWD', '');
 define('DB_NAME', 'ule');
 define('DB_PREFIX', 'ule_');
 

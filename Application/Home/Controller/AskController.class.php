@@ -272,6 +272,7 @@ class AskController extends CommonController {
 		}
 
 		$this->display();
+		echo $index->footer();
 
 	}
 
@@ -433,91 +434,297 @@ class AskController extends CommonController {
 
 		if (IS_AJAX) {
 
-			$count= M('ask')->count("id");
-			$Page = new \Think\Page($count,LISTNUM);
+			/*热门求助,一次性加载数据*/
+			// $hot_ask=M('ask')->field('a.id,a.ask_content,a.ask_title,a.ask_saw,a.ask_answer,a.ask_add,m.id as memberid,m.member_face,m.member_name')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_user=m.id')->order('a.ask_answer desc')->select();
 
-			/*热门求助*/
-			$hot_ask=M('ask')->field('a.id,a.ask_content,a.ask_title,a.ask_saw,a.ask_answer,a.ask_add,m.id as memberid,m.member_face,m.member_name')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_user=m.id')->order('a.ask_answer desc')->limit(4)->select();
+			// if ($hot_ask) {
 
-			if ($hot_ask) {
-
-				/*重新整理数据*/
-				$rs=array();
-				foreach ($hot_ask as $key => $value) {
+			// 	/*重新整理数据*/
+			// 	$rs=array();
+			// 	foreach ($hot_ask as $key => $value) {
 					
-					$rs[$key]['id']=$value['id'];
-					$rs[$key]['ask_content']=htmlspecialchars_decode($value['ask_content']);
-					$rs[$key]['ask_title']=$value['ask_title'];
-					$rs[$key]['ask_saw']=$value['ask_saw'];
-					$rs[$key]['ask_answer']=$value['ask_answer'];
-					$rs[$key]['member_face']=$value['member_face'];
-					$rs[$key]['member_name']=$value['member_name'];
-					$rs[$key]['memberid']=$value['memberid'];
-					$rs[$key]['showurl']=U('Home/Ask/askShow?id='.$value['id']);
-					$rs[$key]['add_time']=timestr($value['ask_add'],time());
-					$tags=M('tags')->where('pid='.$value['id'])->select();
-					if (!empty($tags)) {
-						$rs[$key]['tags']=$tags;
-					}
+			// 		$rs[$key]['id']=$value['id'];
+			// 		$rs[$key]['ask_content']=htmlspecialchars_decode($value['ask_content']);
+			// 		$rs[$key]['ask_title']=$value['ask_title'];
+			// 		$rs[$key]['ask_saw']=$value['ask_saw'];
+			// 		$rs[$key]['ask_answer']=$value['ask_answer'];
+			// 		if ($value['member_face']) {
+			// 			$rs[$key]['member_face']=$value['member_face'];
+			// 		}else{
+			// 			$rs[$key]['member_face']=HOME_IMG_PATH."default.jpg";
+			// 		}
+					
+			// 		$rs[$key]['member_name']=$value['member_name'];
+			// 		$rs[$key]['memberid']=$value['memberid'];
+			// 		$rs[$key]['showurl']=U('Home/Ask/askShow?id='.$value['id']);
+			// 		$rs[$key]['add_time']=timestr($value['ask_add'],time());
+			// 		$tags=M('tags')->where('pid='.$value['id'])->select();
+			// 		if (!empty($tags)) {
+			// 			$rs[$key]['tags']=$tags;
+			// 		}
 				
 
+			// 	}
+
+
+			// 	$data['pagesize']=LISTNUM;
+			// 	$data['code']=200;
+			// 	$data['data']=$rs;
+			// 	$data['msg']='获取成功!';
+
+
+
+
+			// }else{
+
+			// 	$data['code']=400;
+			// 	$data['msg']='暂无数据!';
+			// }
+
+			// $this->ajaxReturn($data);
+
+
+
+
+
+
+
+			/*根据返回的页面加载数据，这样比较有效率*/
+			header('Content-Type:text/html;charset=utf-8');
+
+		    // 获取当前页码，默认第一页，设置每页默认显示条数
+		    $nowpage = I('get.page', 1, 'intval');
+
+
+		    /*每页显示的数据量pagesize*/
+		    $limits = LISTNUM;
+
+		    // 获取总条数
+		    $count=M('ask')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_user=m.id')-> count();
+
+		    if ($count) {
+		    	/*计算获取到当前页码之后从数据库中的哪条开始取我们规定的条数*/
+			    $since=$nowpage* $limits-$limits;
+
+
+			    // 计算总页面
+			    $allpage = ceil($count / $limits);
+			    $allpage = intval($allpage);
+
+
+			    $lists=M('ask')->field('a.id,a.ask_content,a.ask_title,a.ask_saw,a.ask_answer,a.ask_add,m.id as memberid,m.member_face,m.member_name')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_user=m.id')->limit($since, $limits)->order('a.ask_answer desc')->select();
+
+
+			    if ($lists) {
+
+					/*重新整理数据*/
+					$rs=array();
+					foreach ($lists as $key => $value) {
+						
+						$rs[$key]['id']=$value['id'];
+						$rs[$key]['ask_content']=htmlspecialchars_decode($value['ask_content']);
+						$rs[$key]['ask_title']=$value['ask_title'];
+						$rs[$key]['ask_saw']=$value['ask_saw'];
+						$rs[$key]['ask_answer']=$value['ask_answer'];
+						if ($value['member_face']) {
+							$rs[$key]['member_face']=$value['member_face'];
+						}else{
+							$rs[$key]['member_face']=HOME_IMG_PATH."default.jpg";
+						}
+						
+						$rs[$key]['member_name']=$value['member_name'];
+						$rs[$key]['memberid']=$value['memberid'];
+						$rs[$key]['showurl']=U('Home/Ask/askShow?id='.$value['id']);
+						$rs[$key]['add_time']=timestr($value['ask_add'],time());
+						$tags=M('tags')->where('pid='.$value['id'])->select();
+						if (!empty($tags)) {
+							$rs[$key]['tags']=$tags;
+						}
+					
+
+					}
 				}
 
+				 // ajax 分页输出
+		   		 $info = array('lists'=>$rs,'allpage'=>$allpage,'nowpage'=>$nowpage,'pagesize'=>$limits,'code'=>200,'msg'=>'请求成功！');
 
-
-				// $pageArr=array();
-				// foreach ($rs as $key => $value) {
-				// 	$img=$value['member_face'];
-				// 	if (!$img) {
-				// 		$img=__ROOT__.'/Public/home/img/default.jpg';
-				// 	}
-
-				// 	//$str='dsad';
-				// 	// $str.="<dl>";
-				// 	// $str.="<a href='".$value['memberid']."' class='face'>";
-				// 	// $str.="<img src='".$img."'/>";
-				// 	// $str.="<span class='c666'>".$value['member_name']."</span>";
-				// 	// $str.="<span class='c-999'>提了一个问题 - ".$value['add_time']."</span></a>";
-				// 	// $str.="<a class='f-16 text-l pt-10 pb-5 dis_b lh-20 c-uleblue' href='".$value['showurl']."' style='margin-bottom: 0px;'>".$value['ask_title']."</a>";
-				// 	// $str.="<div class='text-l c-777 f-14 lh-24 text_Hm36'>".$value['ask_content']."</div>";
-				// 	// $str.="<div class='tool_box clearfix'>";
-				// 	// if ($value['tags']) {
-				// 	// 	foreach ($value['tags'] as $tag){
-				// 	// 		$str.="<a href='javascript:;' class='c-999'>".$tag['name']."</a>";
-				// 	// 	}
-							
-				// 	// }
-				// 	// $str.="<div class='read_message_box'>";
-				// 	// $str.="<div class='answer'><a href='#'>".$value['ask_answer']."</a>个回答</div>";
-				// 	// $str.="<div class='read'><a href='#'>".$value['ask_saw']."</a>人浏览</div>";			
-				// 	// $str.="	</div></div></dl>";
-		
-				// 	// $pageArr[$key]=$str;	
-
-				// 	$pageArr[$key]=$value;
-				// }
-
-
-				$show = $Page->show();// 分页显示输出
-				$this->assign('page',$show);// 赋值分页输出
-				$this->assign('count',$count);
-
-				$data['count']=$count;
-				$data['code']=200;
-				$data['data']=$rs;
-				$data['msg']='获取成功!';
-
-			}else{
-
-				$data['code']=400;
-				$data['msg']='暂无数据!';
-			}
-
-			$this->ajaxReturn($data);
+		    }else{
+		    	 // ajax 分页输出
+		   		 $info = array('lists'=>$rs,'allpage'=>$allpage,'nowpage'=>$nowpage,'pagesize'=>$limits,'code'=>400,'msg'=>'暂无数据！');
+		    }   
+		   
+		    $this->ajaxReturn($info,'json');
+	
 		}
 		
 		$this->error('哈哈哈,小朋友,再胡乱蹿,小尾巴给你剪掉...');
 	}
+
+
+
+
+	/*待回复ajax传递数据方法*/
+	public function waitBack()
+	{
+		if (IS_AJAX) {
+		
+
+		/*根据返回的页面加载数据，这样比较有效率*/
+			header('Content-Type:text/html;charset=utf-8');
+
+		    // 获取当前页码，默认第一页，设置每页默认显示条数
+		    $nowpage = I('get.page', 1, 'intval');
+
+
+		    /*每页显示的数据量pagesize*/
+		    $limits = LISTNUM;
+
+		    // 获取总条数
+		    $count=M('ask')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_answer=0 AND a.ask_user=m.id')-> count();
+
+
+		    if ($count) {
+		    	/*计算获取到当前页码之后从数据库中的哪条开始取我们规定的条数*/
+			    $since=$nowpage* $limits-$limits;
+
+
+			    // 计算总页面
+			    $allpage = ceil($count / $limits);
+			    $allpage = intval($allpage);
+
+
+			    $lists=M('ask')->field('a.id,a.ask_content,a.ask_title,a.ask_saw,a.ask_answer,a.ask_add,m.id as memberid,m.member_face,m.member_name')->table(array(DB_PREFIX.'ask' =>'a' ,DB_PREFIX.'member'=>'m' ))->where('a.ask_answer=0 AND a.ask_user=m.id')->limit($since, $limits)->order('a.ask_add desc')->select();
+
+
+			    if ($lists) {
+
+					/*重新整理数据*/
+					$rs=array();
+					foreach ($lists as $key => $value) {
+						
+						$rs[$key]['id']=$value['id'];
+						$rs[$key]['ask_content']=htmlspecialchars_decode($value['ask_content']);
+						$rs[$key]['ask_title']=$value['ask_title'];
+						$rs[$key]['ask_saw']=$value['ask_saw'];
+						$rs[$key]['ask_answer']=$value['ask_answer'];
+						if ($value['member_face']) {
+							$rs[$key]['member_face']=$value['member_face'];
+						}else{
+							$rs[$key]['member_face']=HOME_IMG_PATH."default.jpg";
+						}
+						
+						$rs[$key]['member_name']=$value['member_name'];
+						$rs[$key]['memberid']=$value['memberid'];
+						$rs[$key]['showurl']=U('Home/Ask/askShow?id='.$value['id']);
+						$rs[$key]['add_time']=timestr($value['ask_add'],time());
+						$tags=M('tags')->where('pid='.$value['id'])->select();
+						if (!empty($tags)) {
+							$rs[$key]['tags']=$tags;
+						}
+					
+
+					}
+				}
+
+				 // ajax 分页输出
+		   		 $info = array('lists'=>$rs,'allpage'=>$allpage,'nowpage'=>$nowpage,'pagesize'=>$limits,'counts'=>$count,'code'=>200,'msg'=>'请求成功！');
+
+		    }else{
+		    	 // ajax 分页输出
+		   		 $info = array('lists'=>$rs,'allpage'=>$allpage,'nowpage'=>$nowpage,'pagesize'=>$limits,'code'=>400,'msg'=>'暂无数据！');
+		    }   
+		   
+		    $this->ajaxReturn($info,'json');
+	
+		}
+		
+		$this->error('哈哈哈,小朋友,再胡乱蹿,小尾巴给你剪掉...');
+	}
+
+
+
+
+
+	public function searchAsk(){
+
+		if (IS_POST) {
+			$title=I('post.title','');
+
+			if (!empty($title)) {
+				
+				$where['ask_title']=array('like','%'.$title.'%');
+
+				$count=M('ask')->where($where)->count("id");
+
+
+				$Page = new \Think\Page($count,LISTNUM);
+				$rss=M('ask')->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+
+				if ($rss) {
+
+						/*重新整理数据*/
+						$rs=array();
+						foreach ($rss as $key => $value) {
+							
+							$rs[$key]['id']=$value['id'];
+							$rs[$key]['ask_content']=htmlspecialchars_decode($value['ask_content']);
+							$rs[$key]['ask_title']=$value['ask_title'];
+							$rs[$key]['ask_saw']=$value['ask_saw'];
+							$rs[$key]['ask_answer']=$value['ask_answer'];
+							$rs[$key]['member_face']=$value['member_face'];
+							$rs[$key]['member_name']=$value['member_name'];
+							$rs[$key]['memberid']=$value['memberid'];
+							$rs[$key]['showurl']=U('Home/Ask/askShow?id='.$value['id']);
+							$rs[$key]['add_time']=timestr($value['ask_add'],time());
+							$tags=M('tags')->where('pid='.$value['id'])->select();
+							if (!empty($tags)) {
+								$rs[$key]['tags']=$tags;
+							}
+							
+
+						}
+
+					$this->assign('title',$title);
+					$this->assign('info',$rs);
+					$show = $Page->show();// 分页显示输出
+					$this->assign('page',$show);// 赋值分页输出
+					$this->assign('count',$count);
+				}else{
+					$this->assign('title',$title);
+				}
+
+			}else{
+
+				$this->assign('titlempty',true);
+
+			}
+
+			
+
+		}
+
+
+
+		$index = A('Index');
+		$css=parent::staticfile_load('css',array('header','common','ulehelp','footer'));
+		$js=parent::staticfile_load('js',array('header','ask'));
+		$libfile = array('js'=>array('navfix/navFixed','layui/layui'),'css'=>array('layui/css/layui'));
+        $lib=parent::staticfile_load('lib',$libfile);
+		echo $index->header($css,$js,$lib);
+
+
+
+		$this->display('search');
+		echo $index->footer();
+
+	}
+
+
+
+
+
+
+
 
 
 

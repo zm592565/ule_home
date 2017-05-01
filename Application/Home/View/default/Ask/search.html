@@ -10,7 +10,7 @@
 <div class="box_ulehelp">
       			<div class="ask_sub">
       				<form action="{U('Home/Ask/searchAsk')}" method="post">
-	      				<input placeholder="发布求助前请先搜索，该问题之前是否已经发布过！" type="text"  id="search_v" class="input-text radius" />
+	      				<input placeholder="发布求助前请先搜索，该问题之前是否已经发布过！" type="text" name="title"  id="search_v" class="input-text radius" />
 	      				<button type="submit" id="search_btn" class="btn btn-warning radius ml-10">搜索答案</button>
 					
       				{if U('Home/Ask/checkUser')}
@@ -25,17 +25,29 @@
       		<div class="box_1200 clearfix pt-20 pb-20">
       			
       			<div class="left_help clearfix">
-      				<ul class="nav_top">
-      					<li class="active">最新求助</li>
-      					<li onclick="demo();">热门求助</li>
-      					<li onclick="backMessage();">待回复</li>
+					
+					{if $titlempty}
+					<div class="ule_box_left ule_box_left_active clearfix">
+					<dl class="text-c c-warning f-14">搜索关键词不得为空!</dl>
+					</div>
+					{else}
+						
+					<div class="nav_top clearfix">
+      					
+      					<div class="f-l lh-24 f-14">
+							{if $count}
+							悠乐为您找到关于<cite class="c-warning" style="padding-left: 3px;padding-right: 3px">"{$title}"</cite>的结果<cite class="c-success" style="padding-left: 3px;padding-right: 3px">{$count}</cite>条
+							{else}
+							很遗憾没有找到你搜索的<cite class="c-warning" style="padding-left: 3px;padding-right: 3px">"{$title}"</cite>的结果
+							{/if}
+      					</div>
       					<a {if U('Home/Ask/checkUser')} href="javascript:;" id="send_box" {else} href="{U('Home/Login/index')}" {/if} class="post_send radius"><i class="Hui-iconfont Hui-iconfont-add"></i>发布求助</a>
-      				</ul>
+      				</div>
       				<div class="ule_box_left ule_box_left_active clearfix">
       					
-      					{if $latest}
+      					{if $info}
 
-      						{foreach $latest as $value}
+      						{foreach $info as $value}
       							<dl>
 									<a href="{$value.memberid}" class="face">
 										<img src="{if $value['member_face']}{$value.member_face}{else}{$smarty.const.HOME_IMG_PATH}default.jpg{/if}" />
@@ -58,20 +70,20 @@
 								</dl>
       						{/foreach}
 
-
-
       						<div class="pagination" style="margin-top:20px">{$page}</div>
       					{else}
-      						<div class="Huialert Huialert-success"><i class="icon-remove"></i>暂无数据...</div>
+      					<dl>
+      						<p class="f-12 c-999 text-c">暂无查询结果...</p>
+      					</dl>
       					{/if}	
 
       				</div>
-      				<div class="ule_box_left clearfix">  					
-      					<div id="askpage"></div>
-      				</div>
-      				<div class="ule_box_left clearfix">
-						<div id="askpage"></div>
-					</div>
+
+
+					{/if}
+
+      				
+      				
       			</div>
       			<div class="right_help">
       				

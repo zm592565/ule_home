@@ -1,25 +1,28 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-05-01 17:10:00
-         compiled from "./Application/Home/View/default\Ask\index.html" */ ?>
-<?php /*%%SmartyHeaderCode:2560658f74c094bbad2-86295487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.6, created on 2017-05-01 17:36:49
+         compiled from "./Application/Home/View/default\Ask\search.html" */ ?>
+<?php /*%%SmartyHeaderCode:303085906f6dbe16ce0-22295107%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'd3d984eb9b7bfe53a9874d9508305746a37e65a7' => 
+    '4004bd0097c5a567a29703caceee82c43eecb029' => 
     array (
-      0 => './Application/Home/View/default\\Ask\\index.html',
-      1 => 1493629780,
+      0 => './Application/Home/View/default\\Ask\\search.html',
+      1 => 1493631406,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2560658f74c094bbad2-86295487',
+  'nocache_hash' => '303085906f6dbe16ce0-22295107',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_58f74c098559b',
+  'unifunc' => 'content_5906f6dc0bad4',
   'variables' => 
   array (
-    'latest' => 0,
+    'titlempty' => 0,
+    'count' => 0,
+    'title' => 0,
+    'info' => 0,
     'value' => 0,
     'tag' => 0,
     'page' => 0,
@@ -28,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58f74c098559b')) {function content_58f74c098559b($_smarty_tpl) {?><link rel="stylesheet" type="text/css" href="<?php echo @COMMON_CSS_PATH;?>
+<?php if ($_valid && !is_callable('content_5906f6dc0bad4')) {function content_5906f6dc0bad4($_smarty_tpl) {?><link rel="stylesheet" type="text/css" href="<?php echo @COMMON_CSS_PATH;?>
 page.css">
 <script type="text/javascript">
 	var loginIS="<?php echo session('userid');?>
@@ -48,7 +51,7 @@ page.css">
       			<div class="ask_sub">
       				<form action="<?php echo U('Home/Ask/searchAsk');?>
 " method="post">
-	      				<input placeholder="发布求助前请先搜索，该问题之前是否已经发布过！" type="text"  id="search_v" class="input-text radius" />
+	      				<input placeholder="发布求助前请先搜索，该问题之前是否已经发布过！" type="text" name="title"  id="search_v" class="input-text radius" />
 	      				<button type="submit" id="search_btn" class="btn btn-warning radius ml-10">搜索答案</button>
 					
       				<?php if (U('Home/Ask/checkUser')){?>
@@ -64,19 +67,34 @@ page.css">
       		<div class="box_1200 clearfix pt-20 pb-20">
       			
       			<div class="left_help clearfix">
-      				<ul class="nav_top">
-      					<li class="active">最新求助</li>
-      					<li onclick="demo();">热门求助</li>
-      					<li onclick="backMessage();">待回复</li>
+					
+					<?php if ($_smarty_tpl->tpl_vars['titlempty']->value){?>
+					<div class="ule_box_left ule_box_left_active clearfix">
+					<dl class="text-c c-warning f-14">搜索关键词不得为空!</dl>
+					</div>
+					<?php }else{ ?>
+						
+					<div class="nav_top clearfix">
+      					
+      					<div class="f-l lh-24 f-14">
+							<?php if ($_smarty_tpl->tpl_vars['count']->value){?>
+							悠乐为您找到关于<cite class="c-warning" style="padding-left: 3px;padding-right: 3px">"<?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+"</cite>的结果<cite class="c-success" style="padding-left: 3px;padding-right: 3px"><?php echo $_smarty_tpl->tpl_vars['count']->value;?>
+</cite>条
+							<?php }else{ ?>
+							很遗憾没有找到你搜索的<cite class="c-warning" style="padding-left: 3px;padding-right: 3px">"<?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+"</cite>的结果
+							<?php }?>
+      					</div>
       					<a <?php if (U('Home/Ask/checkUser')){?> href="javascript:;" id="send_box" <?php }else{ ?> href="<?php echo U('Home/Login/index');?>
 " <?php }?> class="post_send radius"><i class="Hui-iconfont Hui-iconfont-add"></i>发布求助</a>
-      				</ul>
+      				</div>
       				<div class="ule_box_left ule_box_left_active clearfix">
       					
-      					<?php if ($_smarty_tpl->tpl_vars['latest']->value){?>
+      					<?php if ($_smarty_tpl->tpl_vars['info']->value){?>
 
       						<?php  $_smarty_tpl->tpl_vars['value'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['value']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['latest']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = $_smarty_tpl->tpl_vars['info']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['value']->key => $_smarty_tpl->tpl_vars['value']->value){
 $_smarty_tpl->tpl_vars['value']->_loop = true;
 ?>
@@ -117,21 +135,21 @@ $_smarty_tpl->tpl_vars['tag']->_loop = true;
 								</dl>
       						<?php } ?>
 
-
-
       						<div class="pagination" style="margin-top:20px"><?php echo $_smarty_tpl->tpl_vars['page']->value;?>
 </div>
       					<?php }else{ ?>
-      						<div class="Huialert Huialert-success"><i class="icon-remove"></i>暂无数据...</div>
+      					<dl>
+      						<p class="f-12 c-999 text-c">暂无查询结果...</p>
+      					</dl>
       					<?php }?>	
 
       				</div>
-      				<div class="ule_box_left clearfix">  					
-      					<div id="askpage"></div>
-      				</div>
-      				<div class="ule_box_left clearfix">
-						<div id="askpage"></div>
-					</div>
+
+
+					<?php }?>
+
+      				
+      				
       			</div>
       			<div class="right_help">
       				

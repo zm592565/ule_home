@@ -48,6 +48,14 @@
 	position: relative;
 	padding-right: 200px;
 }
+
+.left_help .nav_top{
+	display: block;
+	position: relative;
+	padding-right: 200px;
+	min-height: 35px;
+}
+
 .left_help ul li{
 	float: left;
 	font-size: 14px;
@@ -65,7 +73,7 @@
 	-webkit-border-radius: 3px;
 }
 
-.left_help ul .post_send{
+.post_send{
 	position: absolute;
 	right: 0px;
 	color: white;
@@ -76,7 +84,10 @@
 	cursor: pointer;
 	text-decoration: none;
 }
-
+.post_send:hover{
+	color: white;
+	text-decoration: none;
+}
 .ule_box_left{
 	float: left;
 	width: 820px;
