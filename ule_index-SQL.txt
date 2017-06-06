@@ -1,0 +1,11 @@
+Select line.*
+, country.name as countryName
+, province.name as provinceName
+, city.name as cityName
+, member.member_name as memberName
+, member.member_email as memberEmail
+From ule_line line
+left join ule_member member on line.send_user = member.id
+left join ule_country country on line.begin_c = country.id
+left join ule_country province on line.begin_s = province.id
+left join ule_country city on line.begin_city = city.id
